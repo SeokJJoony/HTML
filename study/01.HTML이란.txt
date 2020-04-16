@@ -1,0 +1,178 @@
+*HTML
+HTML은 마크업 언어, 마크업 언어란 한 문서에 대하여 그 문서의 특정 부분을 표시하고 그 부분들에
+의미를 부여하는 것을 말함.(프로그래밍 언어가 아님!!)
+
+하이퍼텍스트란 어떤 형태를 가지고 있고 거기에 부가적인 기능을 할 수 있는 문서
+3차원 문서 = 기능을 갖는 문서
+
+*태그
+태그란 꼬리표의 의미를 갖는 것, 즉 HTML의 명령어임
+<...>로 시작하여 </...> 로 종료
+예외도 존재
+
+*HTML의 특징
+1) HTML은 웹문서의 표준 형식
+2) HTML문서는 마크업 언이
+태그를 추가하여 기능부여
+3) HTML 문서는 ASCII 코드로 구성된 일반적인 텍스트 파일
+4) 컴퓨터 시스템이나 운영체제에 독립적
+5) HTML 문서는 공백이나 줄 바꿈을 인식하지 않고 대소문자를 구분하지도 않음
+6) 종료 태그에는 항상 /를 붙임
+
+*HTTP 프로토콜
+TCP 프로토콜 위에서 작동하기 때문에 서버에 연결요청 수락 데이터 전송 후 다시 끊어짐
+HTTP 1.1 부터는 keep-alive라고 하는 기능을 지원, 지정된 시간 동안 연결을 끊지 않고 요청을
+계속해서 보낼 수 있음
+
+*HTML의 구성요소
+1) 요소: 태그의 의미를 결정하는 부분 < > 안에 들어가는 내용이 요소
+2) 태그: <>로 둘러싸인 문서의 중간에 붙여주는 일종의 꼬리표
+3) 속성: 폰트 사이즈 색상등을 설정하는 명령어
+4) 변수: 속성과 관련된 값
+
+*HTML문서의 기본구조
+모든 HTML 문서는 <HEAD>와 <BODY> 부분으로 구성
+헤드는 제목을 포함하고 문서에 대한 일반적인 정보와 제목을 기술
+본문은 실제 텍스트를 포함하며 문서의 내용, 문자의 크기, 링크 삽입 등을 기술
+
+<html> :  Html의 문서 작성을 나타내는 태그
+<head> : 문서의 시작을 알리는 태그
+<title> : 문서의 제목을 지정
+</title> : 문서 제목 끝을 알림
+</head> : 문서의 시작을 알리는 태그의 끝을 알림
+<body> : 본문을 시작하는 태그
+</body> : 본문 끝을 알리는 태그 (실제 웹에 보여지는 내용들)
+</html> : html 문서 작성 끝을 알리는 태그
+
+*태그
+1)H태그
+H태그는 문서 제목을 의미, H다음에는 숫자로 지정 숫자가 커질수록 글자가 작아짐
+
+2)글꼴태그
+<FONT SIZE = 글자크기 숫자 COLOR = "글자색상" FACE="서체">
+글자크기는 생략하면 3이 기본값
+색상의 기본값은 검정
+
+<!doctype html>
+<html>
+ <head>
+  <title>간단한 HTML 예제</title>
+ </head>
+<body>
+<FONT SIZE = 1 COLOR = 000000 FACE="arial>FONT SIZE =1 COLOR = 000000</FONT> :검은색<BR>
+<FONT SIZE = 2 COLOR = 0000ff FACE="modern">FONT SIZE =2 </FONT> : 파란색<BR>
+<FONT SIZE = 3 COLOR = 00ff00 FACE="굴림">FONT  SIZE =3 </FONT> : 연두색<BR>
+<FONT SIZE = 4 COLOR = ff0000 FACE="바탕">FONT SIZE =4 </FONT> : 빨간색<BR>
+<FONT SIZE = 5 COLOR = ffffff>FONT SIZE =5 </FONT> : 하얀색<BR>
+<FONT SIZE = 6 COLOR = 777777> 안녕하세요? </FONT> : 회  색<BR>
+<FONT SIZE = 7 COLOR = RED> 안녕하세요? </FONT><BR>
+</body>
+</html>
+
+3) 글자모양 변경
+<B> ~ </B> : 글자 진하게
+<I> ~ </I> : 이탤릭체(기울어진 글자)
+<U> ~ </U> : 밑줄체
+<TT> ~ </TT> : 타이핑체
+<DFN> ~ </DFN> : 단어 정의체
+<CITE> ~ <CITE> : 글자 모양을 약간 기울어진 형태의 인용체로 나타냄
+<CODE> ~ </CODE> : 코드를 나타낼 때 씀
+<SUB> ~ </SUM> : 로그의 밑같은 아래첨자를 나타낼 떄 씀
+<SUP> ~ </SUP> : 지수의 승 가은 윗첨자를 나타낼 떄 씀
+<BIG> ~ </BIG> : 글자를 강조할 때, 좀더 크게 나타낼 떄 사용
+
+*특수문자 표시
+&nbsp; :공백
+&gt; : >
+&lt; : <
+&amp; : 엠퍼선드
+&quot; : "  
+
+*문서레이아웃
+<BR> : 줄바꿈
+<P> : 문단시작 (align 속성과 함께 쓰일 수 있음, align=left , align=right, align=center)
+<P align =left>
+<DIV> : p태그와 비슷하지만 처음에 공백 줄을 포함 안한다는 차이점이 있음
+
+<CENTER> ~ </CENTER> : 객체를 중앙으로 정렬할 때 사용
+
+<HR> : 수평선을 그릴 때 사용
+<HR width : "숫자 또는 %">
+<HR align : "left/center/right"> :정렬 시 사용
+<HR size : "숫자"> : 두께 조절 시 사용
+<noshade> : 음영효과(입체효과) 제거
+
+<PRE>: 편집한 그대로를 브라우저에서 보여줄 때 사용
+
+<!-- 여기에 주석 표시  -->
+
+*목록만들기 태그
+1)LI 태그(List)
+List의미로서 목록을 적을 때 사용
+네모나 동그라미가 자동 생성
+
+2)UL태그(Unordered List)
+Unordered List의 의미로서 순서가 없는 목록을 작성할 때 쓰임
+
+<HTML>
+<HEAD>
+<TITLE>
+목록만들기 연습
+</TITLE>
+</HEAD>
+<BODY>
+<H3>순서가 없는 목록(UL)</H3>
+<HR>
+한국의 3대 도시?
+<UL type =circle>
+<LI>서울 (type = circle)
+<LI>부산
+<LI>대구
+</UL>
+범용 프로그래밍 언어
+<UL type = disk>
+<LI> C언어 (type = disk>
+<LI> python
+<LI> Java
+</UL>
+</BODY>
+</HTML>
+
+3) OL태그(Ordered List)
+순서있는 목록을 작성할 때 사용
+영문 대소문자나 로마 숫자, 숫자로 목록을 표시
+
+<HTML>
+<HEAD>
+<TITLE>
+목록만들기 연습
+</TITLE>
+</HEAD>
+<BODY>
+<H3>순서가 없는 목록(UL)</H3>
+<HR>
+한국의 3대 도시?
+<OL>
+<LI>서울 (default type = 숫자)
+<LI>부산
+<LI>대구
+</OL>
+범용 프로그래밍 언어
+<OL type = A>
+<LI> C언어 (type = A>
+<LI> python
+<LI> Java
+</OL>
+</BODY>
+</HTML>
+
+4)DL태그(Definition List)
+제목과 내용을 표한하고 싶은 목록을 지정
+<DT>: 제목설정
+<DD>: 내용설정
+
+
+
+
+
+ 
