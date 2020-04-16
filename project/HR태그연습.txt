@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+<TITLE>HR 태그 연습</TITLE>
+</HEAD>
+<BODY>
+<CENTER>
+<H2> 류시화의 짝은 대나무다리 위에서' 중 일부 </H2>
+<HR NOSHADE SIZE = 10>
+누가 만들었는지 알 길 없는<BR>
+인적 드문 오솔길에 놓인<BR>
+<B>작은 대나무 다리</B><P>
+군데군데 구멍이 나고<BR>
+이제는 한 사람의 무게마저 지탱하기 힘든<BR>
+<I>자주 가는 산책길</I><BR>
+작은 대나무다리<P>
+</CENTER>
+</BODY>
+</HTML>
