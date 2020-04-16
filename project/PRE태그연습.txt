@@ -1,0 +1,14 @@
+<HTML>
+<HEAD>
+<TITLE>
+PRE태그 사용 예
+</TITLE>
+</HEAD>
+<BODY>
+<PRE>
+입력한 그대로를 브라우저에 그대로 표시
+      공백도 그대로 보여줌
+"Hello World!"
+</PRE>
+</BODY>
+</HTML>
