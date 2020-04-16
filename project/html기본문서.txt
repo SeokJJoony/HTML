@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+ <head>
+  <title>간단한 HTML 예제</title>
+ </head>
+<body>
+<FONT SIZE = 1 COLOR = 000000 FACE="arial">&nbsp;FONT SIZE =1 COLOR = 000000</FONT> :검은색<BR>
+<FONT SIZE = 2 COLOR = 0000ff FACE="modern">&lt;FONT SIZE =2 </FONT> : 파란색&gt;<BR>
+<FONT SIZE = 3 COLOR = 00ff00 FACE="굴림">&amp;FONT  SIZE =3 </FONT> : 연두색<BR>
+<FONT SIZE = 4 COLOR = ff0000 FACE="바탕">&quot;FONT SIZE =4 </FONT> : 빨간색&quot;<BR>
+<FONT SIZE = 5 COLOR = ffffff>FONT SIZE =5 </FONT> : 하얀색<BR>
+<FONT SIZE = 6 COLOR = 777777> 안녕하세요? </FONT> : 회  색<BR>
+<FONT SIZE = 7 COLOR = RED> 안녕하세요? </FONT><BR>
+</body>
+</html>
