@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<TITLE>
+목록만들기 연습
+</TITLE>
+</HEAD>
+<BODY>
+<H3>순서가 없는 목록(UL)</H3>
+<HR>
+한국의 3대 도시?
+<OL>
+<LI>서울 (default type = 숫자)
+<LI>부산
+<LI>대구
+</OL>
+범용 프로그래밍 언어
+<OL type = A>
+<LI> C언어 (type = A>
+<LI> python
+<LI> Java
+</OL>
+</BODY>
+</HTML>
