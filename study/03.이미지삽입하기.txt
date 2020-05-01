@@ -14,4 +14,110 @@ src는 사용자와 관계없이 브라우저에서 페이지를 열면 외부 �
 *로컬 이미지 태그
 저장되어있는 이미지를 브라우저에 드롭
 드롭후 사진 우클릭 - 이미지 주소 복사
+
+*설정
+width 설정과 height 설정을 해주어 이미지 크기 조절
+링크가 걸린 경우 boarder로 경계선을 추가하여 링크가 걸린걸 표시
+align 설정으로 이미지 정렬
+alt 설정으로 커서를 가져다 댔을때 이미지 정보 표시
+
+<!DOCTYPE html>>
+<html>
+    <head>
+        <title>이미지 삽입하기</title>
+    </head>
+    <body>
+        <H3>문서에 이미지 삽입하기</H3>
+        <IMG src = "image.jpg" width = "300" height = "100" boarder =6>
+    </body>
+</html>
+
+*하이퍼링크 이미지 삽입하기>
+이미지를 클릭했을때 다른 문서로 이동하는 이미지 파일을 하이퍼 링크 이미지라고함
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            하이퍼링크 이미지 삽입하기
+        </title>
+    </head>
+    <body>
+        <A href="하이퍼링크문서.html"><IMG SRC = "img.png"></A>
+    </body>
+</html>
+
+*이미지맵
+큰 이미지 영역을 여러 개의 작은 영역으로 나누어서 여러 개의 링크를 시키고자 할 때
+사용
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        이미지 맵 만들기
+    </title>
+</head>
+<body>
+    <H3>이미지 맵 만들기</H3>
+    <IMG src="이미지.jpg" usemap="#map1">
+        <MAP name = "map1">
+            <AREA shape ="rect" coords = "189,127,393,271" href = "www.naver.com">
+        </MAP>
+</body>
+</html>
+
+*포토샵 효과
+이미지의 필터설정
+alpha : 그림이나 글자의 투명도를 조절할 때 사용
+ -> opacity(불투명도), style(모양), finishOpacity(모양을 지정했을때 불투명도)
+xray : 그림을 흑백으로 나타내고자할 때 사용
+blur : 그림이나 글자를 흐리게 나타낼 때 사용
+ -> add(원본그림 결합여부), direction(방향), strength(강도) 등의 값을 지정해주어야 한다.
+
+*BGSOUND 태그
+HTML 문서에 배경음악을 삽입시킬 때 사용
+mp3,mid,wma,wav 등의 확장자만 가능
+반복 재생 시 loop 속성을 추가
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            BGSOUND 태그
+        </title>
+    </head>
+    <body>
+        <H3>음악 삽입하기</H3>
+        <BGSOUND src = "음악.mp3" loop = "3">
+            <IMG SRC = "이미지.jpg">
+    </body>
+</html>
+
+*EMBED 태그
+음악뿐만 아니라 동영상도 띄울 수 있는 태그
+asx,asf,wma,wmv 확장자를 지원(요즘도 쓰이나??)
+autostart = "true/false" : 자동재생 유무
+hidden = "true/false" : 음악조절판의 유무
+loop = "true/false" : 반복재생 유무
+showcontorls ="true/false" : false일경우 화면은 보이고 플레이어의 조절판 하단은 안보임, true는 그 반대
+width ="수치" height = "수치" 음악조절판의 크기 조절
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            EMBED 태그
+        </title>
+    </head>
+    <body>
+        <H3> 멀티미디어 재생 </H3>
+        <IMG src = "이미지.jpg"><p>
+        <EMBEd src ="동영상.wmv" loop = "true"></EMBED>
+    </body>
+</html>
+
+
+
+
+
  
