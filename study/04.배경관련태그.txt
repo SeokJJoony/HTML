@@ -1,0 +1,9 @@
+*배경관련태그
+<Body> 태그의 다양한 속성을 설정할 수 있는 태그
+background="그림파일" : 문서의 배경 그림
+bgcolor="color" : 문서의 배경 색상
+text="color" : 문서의 기본 글자 색상
+link ="color" : 링크 색상
+alink = "color" : 클릭순간 링크연결중 색상
+
+background로 배경을 정해줄 시 다른 디렉토리인 경우 경로를 지정해줘야함!!
