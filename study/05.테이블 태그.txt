@@ -1,0 +1,120 @@
+*테이블 태그
+표를 작성하는 태그
+<TABLE> : 표를 작성함을 의미
+<CAPTION>: 표의 주석문을 표와 함께 나타낸다
+<TR> :표의 행을 나타내며 줄 바꿈을 의미
+<TH> : 표의 제목을 나타내며 표의 머리글을 의미
+<TD> : 표에 들어가는 내용을 나타내며 표의 각 셀을 의미
+</TABLE> : 표 작성이 끝났음을 의미한다
+
+*TR 태그와 TD태그
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            표 작성하기
+        </title>
+        <body>
+            <table>
+                <tr>
+                    <td bgcolor = "lightblue"> 국어 </td>
+                    <td> 영어 </td>
+                </tr>
+                <tr>
+                    <td>수학</td>
+                    <td>사회</td>
+                </tr>
+            </table>
+        </body>
+    </head>
+</html>
+
+*th 태그
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            표 작성하기
+        </title>
+        <body>
+            <table border ="1" bordercolor = "blue" cellspacing ="0">
+                <caption align = top>과목 종류</caption>
+                <th>과목1</th> <th>과목2</th>
+                <tr>
+                    <td > 국어 </td>
+                    <td> 영어 </td>
+                </tr>
+                <tr>
+                    <td>수학</td>
+                    <td>사회</td>
+                </tr>
+            </table>
+        </body>
+    </head>
+</html>
+
+*TABLE 여백
+cellspacing과 cellpadding의 차이
+cellspacing 셀과 셀사이의 거리
+cellpadding은 셀안에서 테두리와 글자와의 간격을 의미
+
+*cell 병합
+rowspan과 colspan 속성은 셀 병합에 관련되는 속성
+(겁나헷갈림 col이 열이니까 가로로병합 row가 행이니까 세로로병합)
+colspan 했을때 표의 헤더가 있을 경우 세로운 열이 만들어짐!!
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            표 작성하기
+        </title>
+        <body>
+            <table border ="1" bordercolor = "blue" cellspacing ="0">
+                <caption align = top>과목 종류</caption>
+                <th colspan = 2>과목1</th> <th>과목2</th>
+                <tr>
+                    <td > 국어 </td>
+                    <td> 영어 </td>
+                </tr>
+                <tr>
+                    <td>수학</td>
+                    <td>사회</td>
+                </tr>
+            </table>
+        </body>
+    </head>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>셀 병합 예제</title>
+    </head>
+    <body>
+        <table boarder = "5" boardercolor ="blue" cellpadding =10>
+            <tr bgcolor = "lime">
+            <th>자격종류</th>
+            <th>검정방법</th>
+            <th>원서접수기간</th>
+            <th>시행기관</th> 
+        </tr>
+        <tr>
+            <td rowspan="2"> 정보처리기사 </td>
+            <td> 필기 </td>
+            <td> 2008.01.25 ~ 2008.01.31 </td>
+            <td> 한국산업인력공단 </td>
+        </tr>
+        <tr>
+            <td> 실기 </td>
+            <td> 2008.03.17 ~ 2008.03.21 </td>
+            <td> 한국산업인력공단 </td>
+        </tr>
+        </table>
+    </body>
+</html>
+
+
+
+
+
