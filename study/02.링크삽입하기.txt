@@ -10,3 +10,55 @@ anchor는 닻을 의미 a는 anchor의 첫글자를 딴것
 예) 실제 URL은 'https://www.naver.com'이지만 링크 이름은 '네이버로 이동하기'라고 정함
 <a href="URL주소"> 보여지는 링크 이름</a>
 
+href: 연결하고자 하는 HTML 문서 또는 URL, 그림파일을 적는다.
+name: 문서의 특정한 부분을 가리킬 때 사용(책갈피)
+target: 프레임을 난어 사용할 때, 문서를 보여주는 방법을 결정
+_SELF : 링크된 새로운 문서를 현재의 프레임에 보여준다
+_PARENT : 현재 프레임의 상위 프레임을 보여준다
+_TOP : 화면의 모든 프레임을 지우고 화면 전체에 보여준다
+_BLANK: 현재 창을 그대로 두고, 새로운 창을 열어 보여준다.
+
+<!doctype html>
+<html>
+    <head>
+        <title>연결부</title>
+    </head>
+    <body>
+        <H3>다른 문서로 이동하기</H3>
+        <hr>
+        <br>
+        <A href="Untitled-1.html">첫번째 연결문서로 연결</A><br>
+        <A href="Untitled-2.html">두번째 연결문서로 연결</A>
+
+    </body>
+</html>
+
+*책갈피 사용하기
+페이지의 내용이 길어질때 찾는 부분에 책갈피 태그(#)를 해두면 찾기 쉽다.
+<!doctype html>
+<html>
+    <head>
+        <title>책갈피 사용하기
+        </title>
+    </head>
+    <body>
+        <A href = "#구역1"> 구역1로 이동</A><BR>
+        <A href = "#구역2"> 구역2로 이동 </A><BR>
+            <hr>
+            <H3><A name ="구역1">구역1 ON</A></H3>
+            <H3><A name = "구역2">구역2 ON</A></H3>
+    </body>
+</html>
+
+*이메일 연결하기
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>이메일 보내기</title>
+    </head>
+    <body>
+        <h3><a href="mailto:iceclose@naver.com">편지쓰기</a></h3>
+    </body>
+</html>
+
+
