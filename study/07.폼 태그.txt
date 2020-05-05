@@ -1,0 +1,36 @@
+*폼태그
+사용자 정보를 입력하는 양식을 제공하는 것이 FORM 태그이다.
+<FORM> </FORM> 태그안에 <INPUT> 등 여러 태그등으로 사용자의 정보를 입력받음
+METHOD는 웹서버로 사용자 데이터를 보내는 방법을 지정
+get 방식 : 입력되는 정보를 URL 뒤에 추가해서 보내는 방식(URL주소창에 입력정보가 보여지므로 보안성이 취약)
+post 방식 : 입려되는 정보를 http 헤더안에 포함시켜 보내지기 때문에 보안성이 양호
+
+ACTIOM은 전송되는 데이터를 받을 웹서버 프로그램 지정하는데 사용
+NAME은 사용자가 각 입력양식에 입력한 값들을 알아내는데 사용하는 변수이름을 의미
+
+*select 태그
+사용자에게 어떤 목록을 보여주고 그것들 중에서 사용자가 선택하도록 하는 태그
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>입력양식 만들기7</title> 
+    </head>
+    <body>
+        <H4> 여행 출발지를 선택하세요.</H4>
+        <select name ="list1">
+            <option selected>서울특별시</option>
+            <option>대전광역시</option>
+            <option>대구광역시</option>
+        </select>
+        <H4> 여행 도착지를 선택하세요.</H4>
+        <select name = "list2">
+            <option>파리</option>
+            <option selected>맨체스터</option>
+        </select>
+    </body>
+</html>
+
+*textarea 태그
+사용자가 여러 줄의 텍스트를 입력할 수 있도록 입력박스를 제공하는 태그
+
